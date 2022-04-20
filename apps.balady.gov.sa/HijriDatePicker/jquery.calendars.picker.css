@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+* { box-sizing: border-box; }
+
+.calendars { background-color: rgb(255, 255, 255); border-radius: 10px; width: 279px !important; }
+
+.calendars td { border: 1px solid rgb(103, 160, 157); }
+
+.calendars tr:hover { background-color: transparent; }
+
+.calendars a:hover, .calendars a:active, .calendars a:focus, .calendars a:visited { text-decoration: none; }
+
+.calendars-rtl { direction: rtl; }
+
+.calendars-popup { z-index: 1000; }
+
+.calendars-disable { position: absolute; z-index: 100; background-color: white; opacity: 0.5; }
+
+.calendars a { color: rgb(255, 255, 255); text-decoration: none; }
+
+.calendars a.calendars-disabled { color: rgb(136, 136, 136); cursor: auto; }
+
+.calendars button { margin: 0.25em; padding: 0.125em 0em; background-color: rgb(255, 204, 204); border: none; border-radius: 0.25em; font-weight: bold; }
+
+.calendars-nav, .calendars-ctrl { float: left; width: 100%; background-color: rgb(4, 108, 102); color: rgb(255, 255, 255); font-size: 90%; font-weight: bold; direction: ltr; padding: 7px; }
+
+.calendars-nav { border-radius: 3px 3px 0px 0px; }
+
+.calendars-ctrl { border-radius: 0px 0px 10px 10px; }
+
+.calendars-cmd { width: 30%; }
+
+.calendars-cmd-prevJump, .calendars-cmd-nextJump { width: 8%; }
+
+a.calendars-cmd { height: 1.5em; }
+
+button.calendars-cmd { text-align: center; }
+
+.calendars-cmd-prev, .calendars-cmd-prevJump, .calendars-cmd-clear { float: left; padding-left: 2%; }
+
+.calendars-cmd-current, .calendars-cmd-today { float: left; width: 35%; text-align: center; }
+
+.calendars-cmd-next, .calendars-cmd-nextJump, .calendars-cmd-close { float: right; padding-right: 2%; text-align: right; }
+
+.calendars-rtl .calendars-cmd-prev, .calendars-rtl .calendars-cmd-prevJump, .calendars-rtl .calendars-cmd-clear { float: right; padding-left: 0%; padding-right: 2%; text-align: right; }
+
+.calendars-rtl .calendars-cmd-current, .calendars-rtl .calendars-cmd-today { float: right; }
+
+.calendars-rtl .calendars-cmd-next, .calendars-rtl .calendars-cmd-nextJump, .calendars-rtl .calendars-cmd-close { float: left; padding-left: 2%; padding-right: 0%; text-align: left; }
+
+.calendars-month-nav { float: left; background-color: rgb(119, 119, 119); text-align: center; }
+
+.calendars-month-nav div { float: left; width: 12.5%; margin: 1%; padding: 1%; }
+
+.calendars-month-nav span { color: rgb(136, 136, 136); }
+
+.calendars-month-row { clear: left; }
+
+.calendars-month { float: left; width: 100%; border: 1px solid rgb(4, 108, 102); text-align: center; }
+
+.calendars-month-header select option { background-color: white; color: black; }
+
+.calendars-month-header select, .calendars-month-header input { border: none; outline: none; cursor: pointer; }
+
+.calendars-month-header select { width: 49%; padding: 4px; }
+
+.calendars-month-header input { position: absolute; display: none; }
+
+.calendars-month table { width: 100%; border-collapse: collapse; }
+
+.calendars-month thead { border-bottom: 1px solid rgb(170, 170, 170); }
+
+.calendars-month th, .calendars-month td { margin: 0em; padding: 0em; font-weight: normal; text-align: center; }
+
+.calendars-month td.calendars-week { border: 1px solid rgb(119, 119, 119); }
+
+.calendars-month td.calendars-week * { background-color: rgb(119, 119, 119); color: rgb(255, 255, 255); border: none; }
+
+.calendars-month a { display: block; padding: 5px 0px; color: rgb(0, 0, 0); text-decoration: none; }
+
+.calendars-month span { display: block; width: 100%; padding: 5px 0px; }
+
+.calendars-month td span { color: rgb(136, 136, 136); }
+
+.calendars-month td .calendars-other-month { background-color: rgb(255, 255, 255); }
+
+.calendars-month td .calendars-highlight { background-color: rgba(4, 108, 102, 0.58); color: rgb(255, 255, 255); transition: all 0.3s ease-in-out 0s; }
+
+.calendars-month td .calendars-today { background-color: transparent; color: rgb(4, 108, 102); border: 1px solid rgb(4, 108, 102); }
+
+.calendars-month td .calendars-highlight.calendars-today { background-color: rgba(4, 108, 102, 0.58); color: rgb(255, 255, 255); }
+
+.calendars-month td .calendars-selected { background-color: rgb(4, 108, 102); color: rgb(255, 255, 255); }
+
+.calendars-month th.calendars-week { background-color: rgb(119, 119, 119); color: rgb(255, 255, 255); }
+
+.calendars-status { clear: both; background-color: rgb(221, 221, 221); text-align: center; }
+
+.calendars-clear-fix { clear: both; }
+
+.calendars-month table tbody tr td:nth-child(5), .calendars-month table tbody tr td:nth-child(6) { background-color: rgb(221, 221, 221); }
+
+a.calendars-cmd:hover { color: rgb(221, 221, 221); }
